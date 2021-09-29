@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Card from './components/Card';
 
 class App extends React.Component {
   state = {
@@ -40,7 +41,7 @@ class App extends React.Component {
           <h1>Monica's Github</h1>
         </header>
         <div>
-          <p>card info</p>
+          <Card myCard={this.state.myCard}/>
           <p>followers info</p>
         </div>
 
