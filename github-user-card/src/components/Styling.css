@@ -1,5 +1,23 @@
 .pageContainer {
-    border: 4px solid green;
-    height: 99vh;
-    background-color: papayawhip;
+    height: 99.8vh;
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.cardContainer {
+    border: 3px solid white;
+    background-color: aliceblue;
+    color: gray;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    border-radius: 2%;
+}
+
+.bioContainer {
+    padding-left: 2.5%;
+}
+
