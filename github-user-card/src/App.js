@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import Card from './components/Card';
+import Followers from './components/Followers';
+import './components/Styling.css';
 
 class App extends React.Component {
   state = {
@@ -36,13 +38,19 @@ class App extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className='pageContainer'>
         <header>
           <h1>Monica's Github</h1>
         </header>
         <div>
           <Card myCard={this.state.myCard}/>
-          <p>followers info</p>
+        </div>
+        <div className='followersCard'>
+          {
+            this.state.followersCards.map(item => {
+              return <Followers key={item.id} followers={item}/>
+            })
+          }
         </div>
 
       </div>
